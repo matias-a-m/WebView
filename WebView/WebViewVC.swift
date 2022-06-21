@@ -14,18 +14,12 @@ class WebViewVC: UIViewController {
     
     @IBOutlet weak var webView: WKWebView!
     
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        guard let url = URL(string: "https://www.google.com/search?q=\(searchWord ?? "")") else {return}
         
+        guard let url = URL(string: "https://www.google.com/search?q=\(searchWord ?? "")") else {return}
         webView.load(URLRequest(url: url))
     }
-    
-    
-    
-    
-
 }

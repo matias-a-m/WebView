@@ -20,9 +20,9 @@ class ViewController: UIViewController {
     private func configureSearchBtn(){
         searchButton.layer.cornerRadius = 6
         searchButton.layer.shadowColor = UIColor.black.cgColor
-        searchButton.layer.shadowOffset = CGSize(width: 1, height: 1)
-        searchButton.layer.shadowRadius = 3
-        searchButton.layer.shadowOpacity = 0.5
+        searchButton.layer.shadowOffset = CGSize(width: 2, height: 2)
+        searchButton.layer.shadowRadius = 5
+        searchButton.layer.shadowOpacity = 1.0
     }
     
     @IBAction func searchAction(_ sender: UIButton) {
